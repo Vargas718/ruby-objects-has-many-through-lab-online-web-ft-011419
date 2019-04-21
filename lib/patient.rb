@@ -1,9 +1,16 @@
 class Patient 
+<<<<<<< HEAD
   attr_accessor :name, :doctor, :appointment
   @@all = [] 
   
   def initialize(name)
     @doctor = doctor
+=======
+  
+  @@all = [] 
+  
+  def initialize(name)
+>>>>>>> 607fb63791812c1cfed6b2cb09f67acdfffc50fd
     @name = name 
     @@all << self 
   end 
@@ -12,6 +19,7 @@ class Patient
     @@all
   end 
   
+<<<<<<< HEAD
  def new_appointment(date, doctor)
   appointment = Appointment.new(date, self, doctor)
   
@@ -27,5 +35,11 @@ def doctors
   appointments.collect {|appointment| appointment.doctor}
 end
 
+=======
+  def new_appointment(doctor, date)
+    Appointment.new()
+  
+  end 
+>>>>>>> 607fb63791812c1cfed6b2cb09f67acdfffc50fd
   
 end 
